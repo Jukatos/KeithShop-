@@ -169,37 +169,37 @@ footer{
 </header>
     
 <div class="category-bar">
-<div>All Products</div>
-<div>Headphones</div>
-<div>Watches</div>
-<div>Gaming</div>
-<div>Accessories</div>
+<div onclick="filterProduct('all')">All Products</div>
+<div onclick="filterProduct('audio')">Audio</div>
+<div onclick="filterProduct('watch')">Watches</div>
+<div onclick="filterProduct('gaming')">Gaming</div>
+<div onclick="filterProduct('accessories')">Accessories</div>
 </div>
 
 <section class="products">
 
-<div class="card">
+<div class="card product audio">
 <img src="Imagess/WirelessHP.jpg">
 <h3>Wireless Headphones</h3>
 <div class="price">$29.99</div>
 <button>Add to Cart</button>
 </div>
 
-<div class="card">
+<div class="card product watch">
 <img src="Imagess/SmartApple.jpg">
 <h3>Smart Watch</h3>
 <div class="price">$49.99</div>
 <button>Add to Cart</button>
 </div>
 
-<div class="card">
+<div class="card product gaming">
 <img src="Imagess/GamingMouse.webp">
 <h3>Gaming Mouse</h3>
 <div class="price">$19.99</div>
 <button>Add to Cart</button>
 </div>
 
-<div class="card">
+<div class="card product audio accessories">
 <img src="Imagess/spiker.jpg">
 <h3>Bluetooth Speaker</h3>
 <div class="price">$39.99</div>
@@ -211,8 +211,30 @@ footer{
 <footer>
 © 2026 KeithShop. All rights reserved.
 </footer>
+    
+<script>
+function filterProduct(category){
 
+let products = document.querySelectorAll(".product");
+
+products.forEach(product=>{
+    if(category === "all"){
+        product.style.display = "block";
+    }
+    else{
+        if(product.classList.contains(category)){
+            product.style.display = "block";
+        }else{
+            product.style.display = "none";
+        }
+    }
+});
+
+}
+</script>
+    
 </body>
 </html>
+
 
 

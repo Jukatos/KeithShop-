@@ -2,165 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keith's Style Shop</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keith's Style Shop</title>
 
-        body {
-            background-color: #eaeded;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
 
-        /* Header */
-        header {
-            background-color: #131921;
-            color: white;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+body{
+    background: #f4f6fb;
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #f08804;
-        }
+/* HEADER */
+header{
+    background: linear-gradient(135deg,#4b6cb7,#182848);
+    color:white;
+    padding:18px 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
 
-        .search-bar {
-            display: flex;
-            width: 50%;
-        }
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
 
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-        }
+/* Search */
+.search-bar{
+    display:flex;
+    width:40%;
+}
 
-        .search-bar button {
-            padding: 10px 15px;
-            background-color: #febd69;
-            border: none;
-            cursor: pointer;
-        }
+.search-bar input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:20px 0 0 20px;
+    outline:none;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
+.search-bar button{
+    padding:12px 18px;
+    border:none;
+    background:#ffb703;
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
 
-        /* Products Section */
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-            padding: 30px;
-        }
+/* NAV */
+.nav-links{
+    display:flex;
+    gap:25px;
+    font-size:15px;
+}
 
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+    padding:40px;
+}
 
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
+.card{
+    background:white;
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
 
-        .card h3 {
-            font-size: 16px;
-            margin: 10px 0;
-        }
+.card:hover{
+    transform:translateY(-8px);
+}
 
-        .price {
-            color: #b12704;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+}
 
-        .card button {
-            background-color: #ffd814;
-            border: 1px solid #fcd200;
-            padding: 8px 12px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
+.card h3{
+    margin:12px 0;
+    font-size:18px;
+}
 
-        .card button:hover {
-            background-color: #f7ca00;
-        }
+.price{
+    color:#4b6cb7;
+    font-weight:bold;
+    margin-bottom:12px;
+    font-size:18px;
+}
 
-        footer {
-            background-color: #131921;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+.card button{
+    background:linear-gradient(135deg,#4b6cb7,#182848);
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    opacity:0.85;
+}
+
+/* FOOTER */
+footer{
+    background:#182848;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:20px;
+}
+</style>
+
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">KeithShop</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search products...">
-            <button>Search</button>
-        </div>
-        <div class="nav-links">
-            <div>Account</div>
-            <div>Orders</div>
-            <div>Cart 🛒</div>
-        </div>
-    </header>
+<header>
+<div class="logo">KeithShop</div>
 
-    <section class="products">
-        <div class="card">
-            <img src="Imagess\WirelessHP.jpg" alt="Product">
-            <h3>Wireless Headphones</h3>
-            <div class="price">$29.99</div>
-            <button>Add to Cart</button>
-        </div>
+<div class="search-bar">
+<input type="text" placeholder="Search products...">
+<button>🔍</button>
+</div>
 
-        <div class="card">
-            <img src="Imagess\SmartApple.jpg" alt="Product">
-            <h3>Smart Watch</h3>
-            <div class="price">$49.99</div>
-            <button>Add to Cart</button>
-        </div>
+<div class="nav-links">
+<div>Account</div>
+<div>Orders</div>
+<div>Cart 🛒</div>
+</div>
+</header>
 
-        <div class="card">
-            <img src="Imagess\GamingMouse.webp" alt="Product">
-            <h3>Gaming Mouse</h3>
-            <div class="price">$19.99</div>
-            <button>Add to Cart</button>
-        </div>
+<section class="products">
 
-        <div class="card">
-            <img src="Imagess\spiker.jpg" alt="Product">
-            <h3>Bluetooth Speaker</h3>
-            <div class="price">$39.99</div>
-            <button>Add to Cart</button>
-        </div>
-    </section>
+<div class="card">
+<img src="Imagess/WirelessHP.jpg">
+<h3>Wireless Headphones</h3>
+<div class="price">$29.99</div>
+<button>Add to Cart</button>
+</div>
 
-    <footer>
-        © 2026 KeithShop. All rights reserved.
-    </footer>
+<div class="card">
+<img src="Imagess/SmartApple.jpg">
+<h3>Smart Watch</h3>
+<div class="price">$49.99</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="Imagess/GamingMouse.webp">
+<h3>Gaming Mouse</h3>
+<div class="price">$19.99</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="Imagess/spiker.jpg">
+<h3>Bluetooth Speaker</h3>
+<div class="price">$39.99</div>
+<button>Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 KeithShop. All rights reserved.
+</footer>
 
 </body>
-
-
 </html>

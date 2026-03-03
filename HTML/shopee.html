@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith's Style Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #eaeded;
+        }
+
+        /* Header */
+        header {
+            background-color: #131921;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f08804;
+        }
+
+        .search-bar {
+            display: flex;
+            width: 50%;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #febd69;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #b12704;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            background-color: #ffd814;
+            border: 1px solid #fcd200;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .card button:hover {
+            background-color: #f7ca00;
+        }
+
+        footer {
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">KeithShop</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+        <div class="nav-links">
+            <div>Account</div>
+            <div>Orders</div>
+            <div>Cart 🛒</div>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="card">
+            <img src="Imagess\WirelessHP.jpg" alt="Product">
+            <h3>Wireless Headphones</h3>
+            <div class="price">$29.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Imagess\SmartApple.jpg" alt="Product">
+            <h3>Smart Watch</h3>
+            <div class="price">$49.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Imagess\GamingMouse.webp" alt="Product">
+            <h3>Gaming Mouse</h3>
+            <div class="price">$19.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Imagess\spiker.jpg" alt="Product">
+            <h3>Bluetooth Speaker</h3>
+            <div class="price">$39.99</div>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 KeithShop. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

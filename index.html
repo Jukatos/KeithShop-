@@ -158,8 +158,21 @@
         /* MOBILE */
         @media (max-width:768px) {
 
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 18px 20px;
+                text-align: center;
+            }
+
             .search-bar {
-                display: none;
+                display: flex;
+                width: 100%;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
             }
 
             .menu-toggle {
@@ -169,12 +182,59 @@
             .category-bar {
                 flex-direction: column;
                 display: none;
+                width: 100%;
+                padding: 15px;
+                gap: 15px;
             }
 
             .category-bar.active {
                 display: flex;
             }
 
+            .category-bar div {
+                padding: 12px;
+                text-align: center;
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .products {
+                grid-template-columns: 1fr 1fr;
+                padding: 20px 12px;
+                gap: 18px;
+            }
+
+            .card {
+                padding: 14px;
+            }
+
+            .card img {
+                height: 150px;
+            }
+
+            .card h3 {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 16px;
+            }
+        }
+
+        /* PeeWee Phones */
+        @media (max-width:480px) {
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
         }
     </style>
 

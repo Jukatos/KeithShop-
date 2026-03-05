@@ -2,239 +2,273 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Keith's Style Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith's Style Shop</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-body{
-    background: #f4f6fb;
-}
+        body {
+            background: #f4f6fb;
+        }
 
-/* HEADER */
-header{
-    background: linear-gradient(135deg,#4b6cb7,#182848);
-    color:white;
-    padding:18px 40px;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-}
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo{
-    font-size:26px;
-    font-weight:bold;
-}
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
 
-/* Search */
-.search-bar{
-    display:flex;
-    width:40%;
-}
+        /* Search */
+        .search-bar {
+            display: flex;
+            width: 40%;
+        }
 
-.search-bar input{
-    flex:1;
-    padding:12px;
-    border:none;
-    border-radius:20px 0 0 20px;
-    outline:none;
-}
+        .search-bar input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
 
-.search-bar button{
-    padding:12px 18px;
-    border:none;
-    background:#ffb703;
-    border-radius:0 20px 20px 0;
-    cursor:pointer;
-}
+        .search-bar button {
+            padding: 12px 18px;
+            border: none;
+            background: #ffb703;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
 
-/* NAV */
-.nav-links{
-    display:flex;
-    gap:25px;
-    font-size:15px;
-}
+        /* NAV */
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            font-size: 15px;
+        }
 
-/* PRODUCTS */
-.products{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-    gap:25px;
-    padding:40px;
-}
+        /* PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
 
-.card{
-    background:white;
-    padding:18px;
-    border-radius:15px;
-    text-align:center;
-    transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
 
-.card:hover{
-    transform:translateY(-8px);
-}
+        .card:hover {
+            transform: translateY(-8px);
+        }
 
-.card img{
-    width:100%;
-    height:190px;
-    object-fit: contain;
-    background:#f7f7f7;
-    padding:12px;
-    border-radius:12px;
-}
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: contain;
+            background: #f7f7f7;
+            padding: 12px;
+            border-radius: 12px;
+        }
 
-.card h3{
-    margin:12px 0;
-    font-size:18px;
-}
+        .card h3 {
+            margin: 12px 0;
+            font-size: 18px;
+        }
 
-.price{
-    color:#4b6cb7;
-    font-weight:bold;
-    margin-bottom:12px;
-    font-size:18px;
-}
+        .price {
+            color: #4b6cb7;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
 
-.card button{
-    background:linear-gradient(135deg,#4b6cb7,#182848);
-    color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:25px;
-    cursor:pointer;
-    transition:0.3s;
-}
+        .card button {
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-.card button:hover{
-    opacity:0.85;
-}
+        .card button:hover {
+            opacity: 0.85;
+        }
 
-/* FOOTER */
-footer{
-    background:#182848;
-    color:white;
-    text-align:center;
-    padding:18px;
-    margin-top:20px;
-}
-/* CATEGORY BAR */
-.category-bar{
-    background:white;
-    padding:12px 40px;
-    display:flex;
-    gap:25px;
-    justify-content:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
+        /* FOOTER */
+        footer {
+            background: #182848;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 20px;
+        }
 
-.category-bar div{
-    cursor:pointer;
-    padding:6px 14px;
-    border-radius:20px;
-    transition:0.3s;
-}
+        /* CATEGORY BAR */
+        .category-bar {
+            background: white;
+            padding: 12px 40px;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
 
-.category-bar div:hover{
-    background:#4b6cb7;
-    color:white;
-}
-</style>
+        .category-bar div {
+            cursor: pointer;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .category-bar div:hover {
+            background: #4b6cb7;
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* MOBILE */
+        @media (max-width:768px) {
+
+            .search-bar {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .category-bar {
+                flex-direction: column;
+                display: none;
+            }
+
+            .category-bar.active {
+                display: flex;
+            }
+
+        }
+    </style>
 
 </head>
 
 <body>
 
-<header>
-<div class="logo">KeithShop</div>
+    <header>
+        <div class="logo">KeithShop</div>
 
-<div class="search-bar">
-<input type="text" placeholder="Search products...">
-<button>🔍</button>
-</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>🔍</button>
+        </div>
 
-<div class="nav-links">
-<div>Account</div>
-<div>Orders</div>
-<div>Cart 🛒</div>
-</div>
-</header>
-    
-<div class="category-bar">
-<div onclick="filterProduct('all')">All Products</div>
-<div onclick="filterProduct('audio')">Audio</div>
-<div onclick="filterProduct('watch')">Watches</div>
-<div onclick="filterProduct('gaming')">Gaming</div>
-<div onclick="filterProduct('accessories')">Accessories</div>
-</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-<section class="products">
+        <div class="nav-links">
+            <div>Account</div>
+            <div>Orders</div>
+            <div>🛒</div>
+        </div>
+    </header>
 
-<div class="card product audio">
-<img src="Imagess/WirelessHP.jpg">
-<h3>Wireless Headphones</h3>
-<div class="price">$29.99</div>
-<button>Add to Cart</button>
-</div>
+    <div class="category-bar">
+        <div onclick="filterProduct('all')">All Products</div>
+        <div onclick="filterProduct('audio')">Audio</div>
+        <div onclick="filterProduct('watch')">Watches</div>
+        <div onclick="filterProduct('gaming')">Gaming</div>
+        <div onclick="filterProduct('accessories')">Accessories</div>
+    </div>
 
-<div class="card product watch">
-<img src="Imagess/SmartApple.jpg">
-<h3>Smart Watch</h3>
-<div class="price">$49.99</div>
-<button>Add to Cart</button>
-</div>
+    <section class="products">
 
-<div class="card product gaming">
-<img src="Imagess/GamingMouse.webp">
-<h3>Gaming Mouse</h3>
-<div class="price">$19.99</div>
-<button>Add to Cart</button>
-</div>
+        <div class="card product audio">
+            <img src="Imagess/WirelessHP.jpg">
+            <h3>Wireless Headphones</h3>
+            <div class="price">$29.99</div>
+            <button>Add to Cart</button>
+        </div>
 
-<div class="card product audio accessories">
-<img src="Imagess/spiker.jpg">
-<h3>Bluetooth Speaker</h3>
-<div class="price">$39.99</div>
-<button>Add to Cart</button>
-</div>
+        <div class="card product watch">
+            <img src="Imagess/SmartApple.jpg">
+            <h3>Smart Watch</h3>
+            <div class="price">$49.99</div>
+            <button>Add to Cart</button>
+        </div>
 
-</section>
+        <div class="card product gaming">
+            <img src="Imagess/GamingMouse.webp">
+            <h3>Gaming Mouse</h3>
+            <div class="price">$19.99</div>
+            <button>Add to Cart</button>
+        </div>
 
-<footer>
-© 2026 KeithShop. All rights reserved.
-</footer>
-    
-<script>
-function filterProduct(category){
+        <div class="card product audio accessories">
+            <img src="Imagess/spiker.jpg">
+            <h3>Bluetooth Speaker</h3>
+            <div class="price">$39.99</div>
+            <button>Add to Cart</button>
+        </div>
 
-let products = document.querySelectorAll(".product");
+    </section>
 
-products.forEach(product=>{
-    if(category === "all"){
-        product.style.display = "block";
-    }
-    else{
-        if(product.classList.contains(category)){
-            product.style.display = "block";
-        }else{
-            product.style.display = "none";
+    <footer>
+        © 2026 KeithShop. All rights reserved.
+    </footer>
+
+    <script>
+        function filterProduct(category) {
+
+            let products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+                if (category === "all") {
+                    product.style.display = "block";
+                }
+                else {
+                    if (product.classList.contains(category)) {
+                        product.style.display = "block";
+                    } else {
+                        product.style.display = "none";
+                    }
+                }
+            });
+
         }
-    }
-});
 
-}
-</script>
-    
+        function toggleMenu() {
+            let menu = document.querySelector(".category-bar");
+            menu.classList.toggle("active");
+        }
+    </script>
+
 </body>
+
 </html>
-
-
-

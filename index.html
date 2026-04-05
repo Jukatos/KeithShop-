@@ -7,6 +7,69 @@
     <title>Keith's Style Shop</title>
 
     <style>
+        /* BACKGROUND ANIMATION */
+        .bg-lines {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: #f4f6fb;
+        }
+
+        /* animated lines */
+        .bg-lines span {
+            position: absolute;
+            width: 200%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            opacity: 0.2;
+            animation: moveLines 10s linear infinite;
+        }
+
+        /* different positions */
+        .bg-lines span:nth-child(1) {
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .bg-lines span:nth-child(2) {
+            top: 35%;
+            animation-delay: 2s;
+        }
+
+        .bg-lines span:nth-child(3) {
+            top: 50%;
+            animation-delay: 4s;
+        }
+
+        .bg-lines span:nth-child(4) {
+            top: 65%;
+            animation-delay: 6s;
+        }
+
+        .bg-lines span:nth-child(5) {
+            top: 80%;
+            animation-delay: 8s;
+        }
+
+        /* animation movement */
+        @keyframes moveLines {
+            0% {
+                transform: translateX(-50%) scaleX(1);
+            }
+
+            50% {
+                transform: translateX(0%) scaleX(1.5);
+            }
+
+            100% {
+                transform: translateX(50%) scaleX(1);
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -241,9 +304,16 @@
 </head>
 
 <body>
+    <div class="bg-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
     <header>
-        <div class="logo">KeithShop</div>
+        <div class="logo">SlopShop</div>
 
         <div class="search-bar">
             <input type="text" placeholder="Search products...">
